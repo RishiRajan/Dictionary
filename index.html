@@ -1,0 +1,57 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+      integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+      crossorigin="anonymous"
+    />
+    <title>Dictionary</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row top">
+            <div class="col-lg-4 dummy"></div>
+            <div class="col-lg-4 text-center">
+              <h1 class="Dictionary">Dictionary</h1>
+            </div>
+          </div>
+          
+          <!-- Search bar -->
+          <div class="row searchBarRow">
+            <div class="col-lg-4 dummy"></div>
+            <div class="col-lg-4 text-center">
+              <form onsubmit="navdefault(event)">
+                <div class="input-group">
+                <div class="input-group">
+                  <input
+                    type="search"
+                    class="form-control rounded"
+                    placeholder="Search for any word"
+                    id="searchbar"
+                  />
+                  <button type="submit" class="btn btn-outline-primary">
+                    <img src="./searchicon.png" height="20" width="25" />
+                  </button>
+                </div>
+              </div>
+              </form>
+            </div>
+          </div>
+
+          <!-- Result Section -->
+          <div class="row resultRow">
+            <div class="col-lg-3 dummy"></div>
+            <div class="col-lg-6" id="result">
+
+            </div>
+          </div>
+    </div>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
